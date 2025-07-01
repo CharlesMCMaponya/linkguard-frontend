@@ -1,69 +1,65 @@
-# React + TypeScript + Vite
+# LinkGuard Frontend - Scam & Phishing Detection UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **frontend interface** for LinkGuard – a web app that protects users from scam and phishing links using a trust score system.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌍 Live Project
 
-## Expanding the ESLint configuration
+👉 Visit it here: [https://linkguard-frontend.vercel.app](https://linkguard-frontend.vercel.app)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![Frontend Preview](./screenshots/linkguard-frontend-preview.png)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+##  Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- Clean modern UI built with HTML + Tailwind CSS
+- Enter any URL and scan for phishing or scam risk
+- Displays trust score, red flags, and status badge
+- Copy scan summary to clipboard
+- Fully responsive (works on desktop and mobile)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **HTML** (template)
+- **Tailwind CSS** (for styling)
+- **JavaScript** (core logic)
+- **Lucide Icons** (UI icons)
+- **Chart.js** (trust score donut chart)
+- **Vercel** (live hosting)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Run Locally
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 1. 📦 Install Vite
+If not installed globally:
+```bash
+npm create vite@latest
+
+🔨 Build and Preview
+npm install
+npm run build
+npm run preview
+
+Open browser at: http://localhost:4173
+
+🌐 Backend API
+Make sure the backend is running or deployed (e.g., Render):
+https://linkguard-backend.onrender.com/analyze
+
+ Example Scan:
+ http://free-paypaI-login.com
+
+ Returns:
+ {
+  "score": 22,
+  "category": "Phishing",
+  "redFlags": ["Typo in domain", "Unusual structure"],
+  "status": "suspicious"
+}
+
+📸 Screenshots
+![Frontend Preview](./screenshots/linkguard-frontend-preview.png)
+![Frontend Preview](./screenshots/linkguard-frontend-preview1.png)
+
+
+🧑‍💻 Author
+Made by Charles Mosehla Charles Maponya 🇿🇦
+For education, portfolio building, and cybersecurity learning.
