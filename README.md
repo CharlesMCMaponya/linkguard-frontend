@@ -20,7 +20,7 @@ npm run preview
 ```
 Open browser at: http://localhost:4173
 
-## 🌐 Backend API
+##  Backend API
 Make sure the backend is running or deployed (e.g., Render):
 ```
 https://linkguard-backend.onrender.com/analyze
@@ -39,7 +39,7 @@ https://linkguard-backend.onrender.com/analyze
 }
 ```
 
-## 📱 Screenshots
+## Screenshots
 
 ### Main Interface
 ![Frontend Preview](screenshots/preview.png)
@@ -47,27 +47,27 @@ https://linkguard-backend.onrender.com/analyze
 ### Secondary View  
 ![Frontend Preview](screenshots/preview1.png)
 
-## ✨ Features
+##  Features
 
-- 🔍 Real-time URL scanning
-- 🛡️ Phishing detection
-- 📊 Risk scoring system
-- 🎨 Modern, responsive UI
-- ⚡ Fast Vite-powered build
-- 🌐 RESTful API integration
+-  Real-time URL scanning
+-  Phishing detection
+-  Risk scoring system
+-  Modern, responsive UI
+-  Fast Vite-powered build
+-  RESTful API integration
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - React + Vite
 - Modern CSS/Tailwind
 - RESTful API integration
 - Vercel deployment
 
-## 🚀 Deployment
+##  Deployment
 
 This frontend is deployed on **Vercel** for fast, reliable hosting.
 
-## 👨‍💻 Author
+##  Author
 
 **Made by Charles Mosehla Charles Maponya** 🇿🇦  
 For education, portfolio building, and cybersecurity learning.
